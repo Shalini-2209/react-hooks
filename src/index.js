@@ -11,6 +11,7 @@ import HooksThree from "./Components/HooksThree.jsx";
 import reportWebVitals from "./reportWebVitals";
 import DropDown from "./Components/DropDown.jsx";
 import Toggle from "./Components/Toggle.jsx";
+import CountDown from "./Components/HooksCountDown.jsx";
 
 const routes = (
   <Router>
@@ -20,6 +21,9 @@ const routes = (
         <Route path="/" exact component={Toggle} />
         <Route path="/Hooks">
           <Hooks />
+        </Route>
+        <Route path="/Timer">
+          <CountDown />
         </Route>
       </Switch>
     </div>
