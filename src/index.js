@@ -1,17 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+// import "./index.css";
+// import * as serviceWorker from "./serviceWorker";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Profile from "./Components/AccountType.jsx";
+import Link from "./Components/Links.jsx";
+import Hooks from "./Components/Hooks.jsx";
+import HooksThree from "./Components/HooksThree.jsx";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+import reportWebVitals from "./reportWebVitals";
+import DropDown from "./Components/DropDown.jsx";
+import Toggle from "./Components/Toggle.jsx";
+
+const routes = (
+  <Router>
+    {" "}
+    <div>
+      <Switch>
+        <Route path="/" exact component={Toggle} />
+        <Route path="/Hooks">
+          <Hooks />
+        </Route>
+      </Switch>
+    </div>
+  </Router>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(
+  <React.StrictMode>{routes}</React.StrictMode>,
+  document.getElementById("root")
+);
+// serviceWorker.unregister();
+// reportWebVitals();
