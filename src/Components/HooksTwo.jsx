@@ -8,8 +8,10 @@ const HooksTwo = () => {
   useEffect(() => {
     document.title = `You clicked ${count} times`;
     console.log("Updated");
+    // update only when count changes
   }, [count]);
 
+  // Hooks involving Arrays
   const addItem = () => {
     setItems([
       ...items,
@@ -25,7 +27,7 @@ const HooksTwo = () => {
       <button onClick={addItem}>Add Item</button>
 
       <input type="text" onChange={(e) => setName(e.target.value)} />
-
+      {/* Preferrable way of changing state variables */}
       <button onClick={() => setCount((preCount) => preCount + 1)}>
         Click me
       </button>

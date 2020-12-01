@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Component } from "react";
 
 const HookThree = () => {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
 
+  // ComponentDidMount and ComponentWillUnmount
   useEffect(() => {
     window.addEventListener("mousemove", logMouse);
     console.log("Updated");
@@ -12,6 +13,7 @@ const HookThree = () => {
       window.removeEventListener("mousemove", logMouse);
       console.log("Unmounted..");
     };
+    // Do changes only once using []
   }, []);
 
   const logMouse = (e) => {
