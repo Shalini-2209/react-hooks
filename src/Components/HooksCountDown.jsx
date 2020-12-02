@@ -6,7 +6,7 @@ const CountDown = () => {
   const [count, setCount] = useState(0);
 
   const tick = () => {
-    setCount(count + 1);
+    setCount((preCount) => preCount + 1);
   };
 
   useEffect(() => {
@@ -15,7 +15,8 @@ const CountDown = () => {
     return () => {
       clearInterval(interval);
     };
-  }, [count]);
+    //It should be [count] but, as preCount is maintained, it can be empty
+  }, []);
 
   return (
     <>
@@ -28,7 +29,7 @@ const CountDown = () => {
         <center>
           <Button variant="primary">
             In seconds <Badge variant="light">{count}</Badge>
-            <span className="sr-only">unread messages</span>
+            <span className="sr-only">Tick..Tick</span>
           </Button>
         </center>
       </div>
