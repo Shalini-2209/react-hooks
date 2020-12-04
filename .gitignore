@@ -23,5 +23,8 @@ yarn-debug.log*
 yarn-error.log*
 src/Components/DropDown.jsx
 src/Components/App.jsx
+src/Components/Links.jsx
+src/Components/Test.jsx
+src/Components/Premium.jsx
 package.json
 package-lock.json
