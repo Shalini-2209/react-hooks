@@ -6,12 +6,12 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Profile from "./Components/AccountType.jsx";
 import Link from "./Components/Links.jsx";
 import Hooks from "./Components/Hooks.jsx";
-import HooksThree from "./Components/HooksThree.jsx";
 
 import reportWebVitals from "./reportWebVitals";
 import DropDown from "./Components/DropDown.jsx";
 import Toggle from "./Components/Toggle.jsx";
 import CountDown from "./Components/HooksCountDown.jsx";
+import ComponentA from "./Components/ComponentA.jsx";
 
 const routes = (
   <Router>
@@ -24,6 +24,9 @@ const routes = (
         </Route>
         <Route path="/Timer">
           <CountDown />
+        </Route>
+        <Route path="/useContext">
+          <ComponentA />
         </Route>
       </Switch>
     </div>
