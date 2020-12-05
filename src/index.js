@@ -11,6 +11,7 @@ import DropDown from "./Components/DropDown.jsx";
 import Toggle from "./Components/Toggle.jsx";
 import CountDown from "./Components/HooksCountDown.jsx";
 import ComponentA from "./Components/ComponentA.jsx";
+import Counter from "./Components/Counter.jsx";
 
 const routes = (
   <Router>
@@ -26,6 +27,9 @@ const routes = (
         </Route>
         <Route path="/useContext">
           <ComponentA />
+        </Route>
+        <Route path="/useReducer">
+          <Counter />
         </Route>
       </Switch>
     </div>
