@@ -2,6 +2,7 @@ import React from "react";
 import ComponentB from "./ComponentB";
 export const UserContext = React.createContext();
 export const WishContext = React.createContext();
+export const methodContext = React.createContext();
 
 // useContext example - (instead of props)
 const ComponentA = () => {
@@ -9,7 +10,9 @@ const ComponentA = () => {
     <div>
       <UserContext.Provider value={"Welcomed"}>
         <WishContext.Provider value={"Good morning"}>
-          <ComponentB />
+          <methodContext.Provider value="Enjoy your day">
+            <ComponentB />
+          </methodContext.Provider>
         </WishContext.Provider>
       </UserContext.Provider>
     </div>

@@ -3,8 +3,7 @@ import ReactDOM from "react-dom";
 // import "./index.css";
 // import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Profile from "./Components/AccountType.jsx";
-import Link from "./Components/Links.jsx";
+
 import Hooks from "./Components/Hooks.jsx";
 
 import reportWebVitals from "./reportWebVitals";
