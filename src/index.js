@@ -12,6 +12,7 @@ import Toggle from "./Components/Toggle.jsx";
 import CountDown from "./Components/HooksCountDown.jsx";
 import ComponentA from "./Components/ComponentA.jsx";
 import Counter from "./Components/Counter.jsx";
+import CounterTwo from "./Components/CounterTwo.jsx";
 
 const routes = (
   <Router>
@@ -29,7 +30,8 @@ const routes = (
           <ComponentA />
         </Route>
         <Route path="/useReducer">
-          <Counter />
+          {/* <Counter /> */}
+          <CounterTwo />
         </Route>
       </Switch>
     </div>
