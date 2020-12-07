@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import ReactDOM from "react-dom";
 // import "./index.css";
 // import * as serviceWorker from "./serviceWorker";
@@ -10,6 +10,7 @@ import DropDown from "./Components/DropDown.jsx";
 import Toggle from "./Components/Toggle.jsx";
 import CountDown from "./Components/HooksCountDown.jsx";
 import ComponentA from "./Components/ComponentA.jsx";
+import Component1 from "./Components/Component1.jsx";
 import Counter from "./Components/Counter.jsx";
 import CounterTwo from "./Components/CounterTwo.jsx";
 import CounterThree from "./Components/CounterThree.jsx";
@@ -27,7 +28,8 @@ const routes = (
           <CountDown />
         </Route>
         <Route path="/useContext">
-          <ComponentA />
+          {/* <ComponentA /> */}
+          <Component1 />
         </Route>
         <Route path="/useReducer">
           {/* <Counter /> */}
