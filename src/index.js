@@ -5,7 +5,6 @@ import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Hooks from "./Components/Hooks.jsx";
-
 import reportWebVitals from "./reportWebVitals";
 import DropDown from "./Components/DropDown.jsx";
 import Toggle from "./Components/Toggle.jsx";
@@ -13,6 +12,7 @@ import CountDown from "./Components/HooksCountDown.jsx";
 import ComponentA from "./Components/ComponentA.jsx";
 import Counter from "./Components/Counter.jsx";
 import CounterTwo from "./Components/CounterTwo.jsx";
+import CounterThree from "./Components/CounterThree.jsx";
 
 const routes = (
   <Router>
@@ -31,7 +31,8 @@ const routes = (
         </Route>
         <Route path="/useReducer">
           {/* <Counter /> */}
-          <CounterTwo />
+          {/* <CounterTwo /> */}
+          <CounterThree />
         </Route>
       </Switch>
     </div>
