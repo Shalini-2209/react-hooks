@@ -14,6 +14,7 @@ import Component1 from "./Components/Component1.jsx";
 import Counter from "./Components/Counter.jsx";
 import CounterTwo from "./Components/CounterTwo.jsx";
 import CounterThree from "./Components/CounterThree.jsx";
+import Parent from "./components2/Parent.jsx";
 
 const routes = (
   <Router>
@@ -35,6 +36,9 @@ const routes = (
           {/* <Counter /> */}
           {/* <CounterTwo /> */}
           <CounterThree />
+        </Route>
+        <Route path="/useCallBack">
+          <Parent />
         </Route>
       </Switch>
     </div>
