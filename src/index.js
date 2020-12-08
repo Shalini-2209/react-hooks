@@ -15,6 +15,7 @@ import Counter from "./Components/Counter.jsx";
 import CounterTwo from "./Components/CounterTwo.jsx";
 import CounterThree from "./Components/CounterThree.jsx";
 import Parent from "./components2/Parent.jsx";
+import Memo from "./components2/MemoHook.jsx";
 
 const routes = (
   <Router>
@@ -38,7 +39,8 @@ const routes = (
           <CounterThree />
         </Route>
         <Route path="/useCallBack">
-          <Parent />
+          {/* <Parent /> -------useCallBack */}
+          <Memo />
         </Route>
       </Switch>
     </div>
