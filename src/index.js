@@ -14,8 +14,10 @@ import Component1 from "./Components/Component1.jsx";
 import Counter from "./Components/Counter.jsx";
 import CounterTwo from "./Components/CounterTwo.jsx";
 import CounterThree from "./Components/CounterThree.jsx";
-import Parent from "./components2/Parent.jsx";
-import Memo from "./components2/MemoHook.jsx";
+import Parent from "./Components2/Parent.jsx";
+import Memo from "./Components2/MemoHook.jsx";
+import Focus from "./Components2/FocusInput.jsx";
+import Timer from "./Components2/HookTimer.jsx";
 
 const routes = (
   <Router>
@@ -28,6 +30,10 @@ const routes = (
         </Route>
         <Route path="/Timer">
           <CountDown />
+        </Route>
+        <Route path="/FocusOnLoad">
+          {/* <Focus /> */}
+          <Timer />
         </Route>
         <Route path="/useContext">
           {/* <ComponentA /> */}
