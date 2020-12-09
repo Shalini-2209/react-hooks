@@ -19,6 +19,7 @@ import Memo from "./Components2/MemoHook.jsx";
 import Focus from "./Components2/FocusInput.jsx";
 import Timer from "./Components2/HookTimer.jsx";
 import DocTitleOne from "./Components2/DocTitleOne.jsx";
+import CounterOne from "./Components2/CounterOne.jsx";
 
 const routes = (
   <Router>
@@ -28,6 +29,9 @@ const routes = (
         <Route path="/" exact component={Toggle} />
         <Route path="/Hooks">
           <Hooks />
+        </Route>
+        <Route path="/Custom">
+          <CounterOne />
         </Route>
         <Route path="/Timer">
           <CountDown />
