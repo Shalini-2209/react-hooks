@@ -18,6 +18,7 @@ import Parent from "./Components2/Parent.jsx";
 import Memo from "./Components2/MemoHook.jsx";
 import Focus from "./Components2/FocusInput.jsx";
 import Timer from "./Components2/HookTimer.jsx";
+import DocTitleOne from "./Components2/DocTitleOne.jsx";
 
 const routes = (
   <Router>
@@ -30,6 +31,9 @@ const routes = (
         </Route>
         <Route path="/Timer">
           <CountDown />
+        </Route>
+        <Route path="/DocTitle">
+          <DocTitleOne />
         </Route>
         <Route path="/FocusOnLoad">
           {/* <Focus /> */}
