@@ -20,6 +20,7 @@ import Focus from "./Components2/FocusInput.jsx";
 import Timer from "./Components2/HookTimer.jsx";
 import DocTitleOne from "./Components2/DocTitleOne.jsx";
 import CounterOne from "./Components2/CounterOne.jsx";
+import Form from "./Components2/Form.jsx";
 
 const routes = (
   <Router>
@@ -38,6 +39,9 @@ const routes = (
         </Route>
         <Route path="/DocTitle">
           <DocTitleOne />
+        </Route>
+        <Route path="/Form">
+          <Form />
         </Route>
         <Route path="/FocusOnLoad">
           {/* <Focus /> */}
